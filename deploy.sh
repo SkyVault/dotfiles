@@ -51,4 +51,6 @@ execute "ln -sf $DOTFILES_DIR/zalias $HOME/.zalias"
 execute "ln -sf $DOTFILES_DIR/zprofile $HOME/.zprofile"
 execute "ln -sf $DOTFILES_DIR/zshenv $HOME/.zshenv"
 
+execute "ln -sf $DOTFILES_DIR/set-displays.sh $HOME/.local/bin/set-displays"
+
 print_info ":: Dot files have been deployed ::"

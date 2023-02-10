@@ -51,7 +51,7 @@ window:
     y: 8
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -88,9 +88,9 @@ window:
   dynamic_title: true
 
   # Window class (Linux/BSD only):
-  #class:
+  class:
     # Application instance name
-    #instance: Alacritty
+    instance: Alacritty
     # General application class
     #general: Alacritty
 
@@ -119,10 +119,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Monoid
+    family: DaddyTimeMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Retina
+    style: Regular
 
   # Bold font face
   #bold:
@@ -188,7 +188,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#111212'
+    background: '#000000'
   #  foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
