@@ -32,6 +32,12 @@ print_success() {
 DOTFILES_DIR="$HOME/Repos/dotfiles"
 CONFIG_DIR="$HOME/.config"
 
+# Set up custom directories
+mkdir -p $HOME/Repos
+mkdir -p $HOME/Projects
+mkdir -p $HOME/Applications
+
+
 mkdir -p "$CONFIG_DIR"
 
 for cfg in "$DOTFILES_DIR/config"/*; do
@@ -45,4 +51,4 @@ execute "ln -sf $DOTFILES_DIR/zalias $HOME/.zalias"
 execute "ln -sf $DOTFILES_DIR/zprofile $HOME/.zprofile"
 execute "ln -sf $DOTFILES_DIR/zshenv $HOME/.zshenv"
 
-print_info "[ Dot files have been deployed ]"
+print_info ":: Dot files have been deployed ::"
