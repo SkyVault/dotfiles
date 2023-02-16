@@ -8,7 +8,7 @@ alias cdn="cd $HOME/Downloads && ls"
 alias cdo="cd $HOME/Documents && ls"
 alias cde="cd $HOME/Desktop && ls"
 alias cpi="cd $HOME/Pictures && ls"
-alias ccc="cd $HOME/.local/share/some-scripts && ls"
+alias ccc="cd $HOME/Repos/dotfiles && ls"
 alias config="v $HOME/.local/share/some-scripts && dep"
 alias cre="cd $REPOS && ls"
 
