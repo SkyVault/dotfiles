@@ -44,6 +44,7 @@ for cfg in "$DOTFILES_DIR/config"/*; do
   src="$cfg"
   target="$CONFIG_DIR/$(printf "%s" "$cfg" | sed "s/.*\/\(.*\)/\1/g")"
   execute "ln -sf $src $target" "$src -> $target"
+  execute "rm -rf $target/$(basename -- $target)"
 done
 
 execute "ln -sf $DOTFILES_DIR/zshrc $HOME/.zshrc"

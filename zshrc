@@ -3,6 +3,8 @@ autoload -U colors && colors
 
 PROMPT="🌐 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[yellow]%}%~ $%{$reset_color%} "
 
+bindkey -e
+
 # Bootstrap Znap
 [[ -f $HOME/Repos/zsh-snap/znap.zsh ]] ||
     git clone --depth 1 -- \

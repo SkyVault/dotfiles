@@ -19,6 +19,8 @@ exec --no-startup-id picom
 exec_always --no-startup-id feh --bg-fill $WALLPAPER
 bindsym $mod+Shift+Return exec --no-startup-id $TERM -x nvim
 
+# Auto float windows with *dev*
+for_window [title="\*dev\*"] floating enable
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
