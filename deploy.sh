@@ -51,6 +51,7 @@ execute "ln -sf $DOTFILES_DIR/zshrc $HOME/.zshrc"
 execute "ln -sf $DOTFILES_DIR/zalias $HOME/.zalias"
 execute "ln -sf $DOTFILES_DIR/zprofile $HOME/.zprofile"
 execute "ln -sf $DOTFILES_DIR/zshenv $HOME/.zshenv"
+execute "ln -sf $DOTFILES_DIR/app.sh $HOME/Applications/app.sh"
 
 execute "ln -sf $DOTFILES_DIR/set-displays.sh $HOME/.local/bin/set-displays"
 

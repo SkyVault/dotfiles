@@ -8,6 +8,17 @@ exec --no-startup-id xset r rate 150 35 &
 
 # Makes things pretty
 gaps inner 12
+default_border pixel 4
+default_floating_border pixel 4
+
+# class                 border  bground text    indicator child_border
+client.focused          #4C7899 #285577 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -17,7 +28,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom
 
 exec_always --no-startup-id feh --bg-fill $WALLPAPER
+
 bindsym $mod+Shift+Return exec --no-startup-id $TERM -x nvim
+bindsym $mod+Shift+W exec --no-startup-id feh --bg-fill $WALLPAPER
 
 # Auto float windows with *dev*
 for_window [title="\*dev\*"] floating enable
@@ -42,7 +55,7 @@ bindsym $mod+Shift+q kill
 floating_modifier $mod
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10'"
+bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'DaddyTimeMono Nerd Font'"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -181,19 +194,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+  status_command i3blocks
   position top
-
-  colors {
-    background #000000
-    statusline #FFFFFF
-    separator  #666666
-
-    focused_workspace  #83CAFA #51A2DA #FFFFFF
-    active_workspace   #3C6EB4 #294172 #FFFFFF
-    inactive_workspace #8C8C8C #4C4C4C #888888
-    urgent_workspace   #EC69A0 #DB3279 #FFFFFF
-    binding_mode       #b691d3 #A07CBC #FFFFFF
-  }
-
-  status_command i3status
+  font pango:DaddyTimeMono Nerd Font 12
 }

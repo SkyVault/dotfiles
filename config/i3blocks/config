@@ -1,0 +1,13 @@
+comman=$HOME/.config/i3blocks/scripts/$BLOCK_NAME
+separator=true
+separator_block_width=15
+
+[memory]
+command=$HOME/.config/i3blocks/scripts/memory
+color=#f5af19
+interval=10
+
+[calendar]
+command=$HOME/.config/i3blocks/scripts/calendar
+color=#00aa33
+interval=1

@@ -16,3 +16,6 @@ source $HOME/Repos/zsh-snap/znap.zsh  # Start Znap
 znap source marlonrichert/zsh-autocomplete
 znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
+
+# opam configuration
+[[ ! -r /home/dneumann/.opam/opam-init/init.zsh ]] || source /home/dneumann/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
